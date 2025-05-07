@@ -1,0 +1,69 @@
+{
+  "layout": {
+    "type": "LinearLayout",
+    "attributes": {
+      "orientation": "vertical",
+      "background": "#FFFDE7",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "padding": "24dp"
+    },
+    "children": [
+      {
+        "type": "TextView",
+        "id": "summaryTitle",
+        "attributes": {
+          "layout_width": "wrap_content",
+          "layout_height": "wrap_content",
+          "text": "📝 Work Tasks Summary",
+          "textSize": "26sp",
+          "textStyle": "bold",
+          "textColor": "#F57C00",
+          "layout_gravity": "center",
+          "paddingBottom": "16dp"
+        }
+      },
+      {
+        "type": "TextView",
+        "id": "textViewSummaryIntro",
+        "attributes": {
+          "layout_width": "wrap_content",
+          "layout_height": "wrap_content",
+          "text": "Tasks you’ve planned:",
+          "textSize": "18sp",
+          "textStyle": "italic",
+          "textColor": "#6A1B9A",
+          "paddingBottom": "12dp"
+        }
+      },
+      {
+        "type": "ListView",
+        "id": "summaryListView",
+        "attributes": {
+          "layout_width": "match_parent",
+          "layout_height": "0dp",
+          "layout_weight": "1",
+          "divider": "#FFB74D",
+          "dividerHeight": "2dp",
+          "background": "#FFFFFF",
+          "padding": "8dp"
+        }
+      },
+      {
+        "type": "Button",
+        "id": "buttonBackToHome",
+        "attributes": {
+          "layout_width": "match_parent",
+          "layout_height": "wrap_content",
+          "text": "🔁 Back to Home",
+          "textSize": "16sp",
+          "textStyle": "bold",
+          "textColor": "#FFFFFF",
+          "backgroundTint": "#0288D1",
+          "layout_marginTop": "20dp",
+          "padding": "12dp"
+        }
+      }
+    ]
+  }
+}

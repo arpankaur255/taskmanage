@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.classexer1.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_taskManagerFragment"
+            app:destination="@id/taskManagerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskManagerFragment"
+        android:name="com.example.classexer1.TaskManagerFragment"
+        android:label="Task Manager" />
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.classexer1.SummaryFragment"
+        android:label="Summary" />
+</navigation>
